@@ -15,7 +15,11 @@
     <header class="header">
         <div class="container">
             <a href="./index.html" class="logo">FLYMIX</a>
-            <button class="btn_menu"></button>
+            <button class="btn_menu">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </button>
             <nav class="nav_bar">
                 <ul>
                     <li><a href="#home">Início</a></li>
@@ -29,15 +33,18 @@
     </header>
 
     <main>
-        <div class="container">
-            <section id="home">
+        <section id="home">
+            <div class="container">
                 <h1>O Concreto Perfeito para sua Obra</h1>
                 <p class="subtitle">Mais de 10 anos oferecendo o melhor bombeamento de concreto para grandes obras.</p>
                 <div class="call">
-                    <a href="#budget" class="btn_call btn_dark">Orçamentos</a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#contact" class="btn_call btn_dark">Orçamentos</a>
+                    <a href="#" class="whatsapp_link"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
-            </section>
+            </div>
+        </section>
+
+        <div class="container">
 
             <section id="services">
                 <h4>Nossos Serviços</h4>
@@ -45,32 +52,41 @@
     
                 <div class="cards">
                     <article class="card_services">
-                        <img src="./images/caminhão.jpeg" alt="Bomba de Concreto da Fly Mix">
+                        <div class="card_img">
+                            <img src="./images/caminhão.jpeg" alt="Bomba de Concreto da Fly Mix">
+                            <span></span>
+                        </div>
                         <span class="card_icon"><i class="fa-solid fa-truck-fast"></i></span>
                         <div class="card_content">
                             <p class="card_title">Bomba de Concreto</p>
                             <p class="card_description">Nossas Bombas oferecem um transporte seguro e sem desperdícios para o seu concreto, todos os equipamentos são revisados periodicamente.</p>
-                            <a href="#" class="btn_call">Ler Mais</a>
+                            <a href="#contact" class="btn_call">Conheça Mais</a>
                         </div>
                     </article>
         
                     <article class="card_services">
-                        <img src="./images/caminhão.jpeg" alt="Bomba de Concreto da Fly Mix">
+                        <div class="card_img">
+                            <img src="./images/estacahelice.jpg" alt="Bomba de Concreto da Fly Mix">
+                            <span></span>
+                        </div>
                         <span class="card_icon"><i class="fa-solid fa-truck-fast"></i></span>
                         <div class="card_content">
                             <p class="card_title">Estaca Hélice</p>
                             <p class="card_description">Nossos equipamentos possibilitam a perfuração do terreno, injetando concreto e permitindo maior agilidade na conclusão do estaqueamento.</p>
-                            <a href="#" class="btn_call">Ler Mais</a>
+                            <a href="#contact" class="btn_call">Conheça Mais</a>
                         </div>
                     </article>
         
                     <article class="card_services">
-                        <img src="./images/caminhão.jpeg" alt="Bomba de Concreto da Fly Mix">
+                        <div class="card_img">
+                            <img src="./images/laje.jpg" alt="Bomba de Concreto da Fly Mix">
+                            <span></span>
+                        </div>
                         <span class="card_icon"><i class="fa-solid fa-truck-fast"></i></span>
                         <div class="card_content">
                             <p class="card_title">Lajes Residenciais</p>
                             <p class="card_description">Oferecemos o melhor concreto e aplicação para lajes residenciais. Nossas equipes totalmente treinadas farão o melhor para garantir qualidade e agilidade na sua obra.</p>
-                            <a href="#" class="btn_call">Ler Mais</a>
+                            <a href="#contact" class="btn_call">Conheça Mais</a>
                         </div>
                     </article>
                 </div>
@@ -97,56 +113,84 @@
                     <a href="#contact" class="btn_call">Feche seu Orçamento</a>
                 </article>
             </section>
+
+            <section id="questions">
+                <h4>Dúvidas Frequentes</h4>
+                <p class="sub_text">Tire suas principais dúvidas sobre nossos serviços</p>
+            
+                <ul>
+                    <li class="question_card">
+                        <p class="question_title"><i class="fa-solid fa-caret-down"></i> Como funciona a taxa mínima dos equipamentos?</p>
+                        <p>Donec vehicula ipsum at lorem interdum tristique. Etiam eu augue risus. Sed fermentum ante at felis tincidunt, a maximus tellus ultricies. Nam pellentesque sapien ut urna rhoncus, id congue est consequat. Ut vehicula ornare enim nec suscipit. Vestibulum laoreet ac urna sed faucibus.</p>
+                    </li>
+
+                    <li class="question_card">
+                        <p class="question_title"><i class="fa-solid fa-caret-down"></i>  Qual altura que os equipamentos alcançam?</p>
+                        <p>Donec vehicula ipsum at lorem interdum tristique. Etiam eu augue risus. Sed fermentum ante at felis tincidunt, a maximus tellus ultricies. Nam pellentesque sapien ut urna rhoncus, id congue est consequat. Ut vehicula ornare enim nec suscipit. Vestibulum laoreet ac urna sed faucibus.</p>
+                    </li>
+                </ul>
+
+                <div class="services_call">
+                    <p class="call_services_p">Não encontrou sua dúvida?</p>
+                    <a href="#contact" class="btn_call btn_light">Entre em Contato</a>
+                </div>
+
+            </section>
+
+            <section id="contact">
+                <h4>Contato</h4>
+                <p class="sub_text">Fale com a Fly Mix Bombeamento de Concreto</p>
+                <div class="contact_content">
+                    <div class="map_responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.725290875281!2d-46.590532485380656!3d-23.685780072083016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce43bf19994c6d%3A0x863a3388bdfbe77e!2sFly%20Mix%20Bombeamento%20de%20Concreto!5e0!3m2!1spt-BR!2sbr!4v1676502753592!5m2!1spt-BR!2sbr" 
+                        width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                    <div class="contact_links">
+                        <article class="contact_infos">
+                            <div class="icons">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="links">
+                                <a href="#">Av. Doná Ida Cerati Magrini, 550 - Piraporinha, Diadema - SP</a>
+                                <a href="#">flymixbombas@gmail.com</a>
+                                <a href="#">(11) 94013-4798</a>
+                            </div> 
+                        </article>
+
+                        <article class="call_budget">
+                            <h4>Faça seu Orçamento</h4>
+                            <p class="sub_text">Solicite Orçamentos via WhatsApp ou Formulário de E-mail.</p>
+                            <a href="https://wa.me/5511940134798?text=Olá, vim pelo seu Website. Gostaria de saber mais sobre seus serviços." target="_blank" class="btn_call">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                WhatsApp
+                            </a>
+
+                            <a href="" class="btn_call btn_light">
+                                <i class="fa-solid fa-envelope"></i>
+                                Formulário
+                            </a>
+                        </article>
+                    </div>
+                </div>  
+            </section>
         </div>
-
-        <section id="contact">
-            <h4>Contato</h4>
-            <p class="sub_text">Fale com a Fly Mix Bombeamento de Concreto</p>
-            <!-- MAPS -->
-            <div class="contact_content">
-                <article class="contact_infos">
-                    <a href="#">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>Av. Doná Ida Cerati Magrini, 550 - Piraporinha, Diadema - SP</p>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>flymixbombas@gmail.com</p>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-solid fa-phone"></i>
-                        <p>(11) 94013-4798</p>
-                    </a>
-                </article>
-
-                <article class="call_budget">
-                    <h4>Faça seu Orçamento</h4>
-                    <p class="sub_text">Solicite Orçamentos via WhatsApp ou Formulário de E-mail.</p>
-                    <a href="" class="btn_call">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        WhatsApp
-                    </a>
-
-                    <a href="" class="btn_call btn_light">
-                        <i class="fa-solid fa-envelope"></i>
-                        Formulário
-                    </a>
-                </article>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <div class="direitos">
-            <p>Fly Mix Bombeamento de Concreto &copy; 2023</p>
-            <p>Todos os Direitos Reservados</p>
+        <div class="container">
+            <div class="direitos">
+                <p>Fly Mix Bombeamento de Concreto &copy; 2023</p>
+                <p>Todos os Direitos Reservados</p>
+            </div>
+            <a href="#" class="arrow"><i class="fa-solid fa-arrow-up"></i></a>
+            <p class="dev">Desenvolvido por <a href="http://www.ovitormacel.com">Vitor Macel</a></p>
         </div>
-        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
-        <p>Desenvolvido por <a href="http://www.ovitormacel.com">Vitor Macel</a>.</p>
     </footer>
 
+    <script src="./controller/main.js"></script>
     <script src="https://kit.fontawesome.com/3bb5c1e371.js" crossorigin="anonymous"></script>
 </body>
 </html>
