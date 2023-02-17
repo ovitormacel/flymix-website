@@ -29,11 +29,8 @@ body {
     height: 4.6em;
 }
 
-.header .logo {
-    font-size: 1.6em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #0A100D;
+.header .logo img{
+    height: 60px;
 }
 
 .nav_bar ul {
@@ -71,6 +68,7 @@ body {
     background-position: center;
     background-size: cover;
     height: 500px;
+    margin-bottom: 5em;
 }
 
 #home .container {
@@ -106,7 +104,7 @@ h1 {
     align-items: center;
 }
 
-#home .whatsapp_link {
+#home .arrow_link {
     background-color: #0A100D;
     height: 45px;
     width: 45px;
@@ -117,6 +115,10 @@ h1 {
     color: #f4f4f4;
     text-decoration: none;
     border-radius: 50px;
+    transition: transform .1s linear;
+}
+#home .arrow_link:hover {
+    transform: scale(1.1);
 }
 
 
@@ -250,7 +252,7 @@ h1 {
     background-color: rgba(33, 201, 76, 60%);
     position: absolute;
     top: 42px;
-    left: 25em;
+    right: 0;
 }
 
 .about_content {
@@ -344,15 +346,6 @@ h1 {
     height: 40%;
 }
 
-.contact_infos .icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2em;
-    color: #03CF37;
-}
-
 .contact_infos .links {
     display: flex;
     flex-direction: column;
@@ -362,6 +355,14 @@ h1 {
 .contact_infos .links a {
     color: #515151;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact_infos .links i {
+    font-size: 2em;
+    color: #03CF37;
+    width: 2.5em;
 }
 
 .call_budget .btn_call {
@@ -385,9 +386,13 @@ footer .container {
     align-items: center;
     height: 100%;
 }
+footer .logo {
+    height: 60px;
+}
 footer p{
     color: #0A100D;
     font-size: .8em;
+    text-align: center;
 }
 
 footer .arrow {
@@ -527,8 +532,8 @@ section{
         height: 3.5em;
     }
 
-    .header .logo {
-        font-size: 1.4em;
+    .header .logo img{
+        height: 50px;
     }
 
     .nav_bar{
@@ -538,7 +543,7 @@ section{
         max-height: 0;
         overflow: hidden;
         width: 100%;
-        background-color: rgba(255,255,255, 80%);
+        background-color: rgba(255,255,255, 90%);
         transition: .4s ease-in max-height;
     }
 
@@ -558,4 +563,181 @@ section{
         display: flex;
     }
 
+
+
+
+    /* HOME */
+    #home {
+        background-image: none;
+        background-color: #03CF37;
+        margin-top: 3.5em;
+        height: 100vh;
+    }
+
+    #home .container {
+        height: 100vh;
+        justify-content: flex-end;
+        padding: 5em 0;
+    }
+
+    h1 {
+        font-size: 36px;
+        width: 100%;
+    }
+
+    #home .subtitle {
+        width: 100%;
+    }
+
+
+
+
+    /* SERVICES */
+    #services .cards{
+        flex-direction: column;
+        gap: 5em;
+    }
+
+    .services_call {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: .5em;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4em;
+    }
+
+
+
+
+    /* ABOUT */
+    #about {
+        flex-direction: column;
+    }
+
+    .about_img img{
+        height: 300px;
+        width: 300px;
+        border-radius: 5px 5px 0 0;
+    }
+    .about_img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .about_img span {
+        height: 50px;
+        width: 100%;
+        top: 250px;
+        left: 0;
+    }
+
+    .about_content {
+        border-radius: 0px 0px 5px 5px;
+        height: 35em;
+        padding: 1.5em;
+    }
+
+    .about_content p{
+        text-align: center;
+    }
+
+    .about_content .btn_call{
+        align-self: center;
+        margin-top: 2.5em;
+        text-transform: uppercase;
+    }
+
+
+
+
+    /* QUESTIONS */
+    .question_card {
+        height: 3em;
+    }
+    .question_card.active {
+        height: 20em;
+    }
+
+    .question_card p {
+        color: #515151;
+        margin-left: 25px;
+    }
+
+
+
+
+    /* CONTACT */
+    .contact_content {
+        flex-direction: column;
+    }
+    
+    .map_responsive {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .contact_links {
+        height: 40em;
+    }
+
+    .contact_links .links{
+        gap: 4em;
+    }
+    
+    .contact_infos .links i {
+        width: 0em;
+        margin-right: 2.5em;
+    }
+
+    .links_call_budget {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+    
+    .call_budget .btn_call {
+        margin-right: 0;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+
+
+
+    /* FOOTER */
+    footer {
+        height: 15em;
+        padding: 20px 0;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p{
+        color: #1d4d35;
+    }
+
+    footer .arrow {
+        background-color: #1d4d35;
+    }
+
+    footer .dev a{
+        color: #1d4d35;
+    }
+
+
+
+
+    /* COMPONENTS */
+    h4 {
+        text-align: center;
+        font-size: 24px;
+    }
+    .sub_text {
+        text-align: center;
+    }
 }

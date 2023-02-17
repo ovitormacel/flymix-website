@@ -23,3 +23,7 @@ const handleHambMenu = () => {
 };
 
 hambMenuEl.addEventListener("click", handleHambMenu);
+
+function handleLinkClicked() {
+    handleHambMenu();
+}

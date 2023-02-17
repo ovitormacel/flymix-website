@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="./index.html" class="logo">FLYMIX</a>
+            <a href="./index.html" class="logo"><img src="images/flymix-logo.png" alt=""></a>
             <button class="btn_menu">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
@@ -22,11 +22,11 @@
             </button>
             <nav class="nav_bar">
                 <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#questions">Dúvidas</a></li>
-                    <li><a href="#contact" class="btn_call">Entre em Contato</a></li>
+                    <li><a href="#home" onclick="handleLinkClicked()">Início</a></li>
+                    <li><a href="#services" onclick="handleLinkClicked()">Serviços</a></li>
+                    <li><a href="#about" onclick="handleLinkClicked()">Sobre</a></li>
+                    <li><a href="#questions" onclick="handleLinkClicked()">Dúvidas</a></li>
+                    <li><a href="#contact" class="btn_call" onclick="handleLinkClicked()">Entre em Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,13 +39,12 @@
                 <p class="subtitle">Mais de 10 anos oferecendo o melhor bombeamento de concreto para grandes obras.</p>
                 <div class="call">
                     <a href="#contact" class="btn_call btn_dark">Orçamentos</a>
-                    <a href="#" class="whatsapp_link"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#services" class="arrow_link"><i class="fa-solid fa-arrow-down"></i></a>
                 </div>
             </div>
         </section>
 
         <div class="container">
-
             <section id="services">
                 <h4>Nossos Serviços</h4>
                 <p class="sub_text">Conheça nossos Equipamentos e Serviços Prestados.</p>
@@ -143,35 +142,32 @@
                 <div class="contact_content">
                     <div class="map_responsive">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.725290875281!2d-46.590532485380656!3d-23.685780072083016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce43bf19994c6d%3A0x863a3388bdfbe77e!2sFly%20Mix%20Bombeamento%20de%20Concreto!5e0!3m2!1spt-BR!2sbr!4v1676502753592!5m2!1spt-BR!2sbr" 
-                        width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     
                     <div class="contact_links">
                         <article class="contact_infos">
-                            <div class="icons">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <i class="fa-solid fa-envelope"></i>
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
                             <div class="links">
-                                <a href="#">Av. Doná Ida Cerati Magrini, 550 - Piraporinha, Diadema - SP</a>
-                                <a href="#">flymixbombas@gmail.com</a>
-                                <a href="#">(11) 94013-4798</a>
+                                <a href="#"><i class="fa-solid fa-location-dot"></i>Av. Doná Ida Cerati Magrini, 550 - Piraporinha, Diadema - SP</a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i>flymixbombas@gmail.com</a>
+                                <a href="#"><i class="fa-solid fa-phone"></i>(11) 94013-4798</a>
                             </div> 
                         </article>
 
                         <article class="call_budget">
                             <h4>Faça seu Orçamento</h4>
                             <p class="sub_text">Solicite Orçamentos via WhatsApp ou Formulário de E-mail.</p>
-                            <a href="https://wa.me/5511940134798?text=Olá, vim pelo seu Website. Gostaria de saber mais sobre seus serviços." target="_blank" class="btn_call">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                WhatsApp
-                            </a>
+                            <div class="links_call_budget">
+                                <a href="https://wa.me/5511940134798?text=Olá, vim pelo seu Website. Gostaria de saber mais sobre seus serviços." target="_blank" class="btn_call">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    WhatsApp
+                                </a>
 
-                            <a href="" class="btn_call btn_light">
-                                <i class="fa-solid fa-envelope"></i>
-                                Formulário
-                            </a>
+                                <a href="" class="btn_call btn_light">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Formulário
+                                </a>
+                            </div>
                         </article>
                     </div>
                 </div>  
@@ -181,6 +177,7 @@
 
     <footer>
         <div class="container">
+            <a href="#"><img src="images/flymix-logo.png" alt="" class="logo"></a>
             <div class="direitos">
                 <p>Fly Mix Bombeamento de Concreto &copy; 2023</p>
                 <p>Todos os Direitos Reservados</p>
